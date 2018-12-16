@@ -78,7 +78,7 @@
 		padding-left: (@gutter / 2);
 	};
 
-	each(keys(@breakpoints), #(@breakpoint) {
+	each(map-keys(@breakpoints), #(@breakpoint) {
 		@infix: breakpoint-infix(@breakpoint, @breakpoints);
 
 		#for-1-to-columns(@i: 1) when (@i <= @columns) {
